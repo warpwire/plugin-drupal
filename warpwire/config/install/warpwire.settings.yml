@@ -1,0 +1,14 @@
+warpwire:
+  lti_key: ""
+  lti_secret: ""
+  lti_url: ""
+  lti_institution_name: ""
+  group_name: ""
+  default_video_display_share: true
+  default_video_display_title: true
+  default_video_display_autoplay: false
+  default_video_display_cc: true
+  default_video_width: 480
+  default_video_height: 360
+  min_video_width: 320
+  min_video_height: 240

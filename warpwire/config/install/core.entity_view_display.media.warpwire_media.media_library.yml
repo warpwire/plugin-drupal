@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.warpwire_media.field_media_warpwire_source
+    - image.style.medium
+    - media.type.warpwire_media
+  module:
+    - warpwire
+    - image
+id: media.warpwire_media.media_library
+targetEntityType: media
+bundle: warpwire_media
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ""
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {}
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_warpwire_source: true
+  name: true
+  uid: true

@@ -1,0 +1,18 @@
+warpwire.settings:
+  title: "Warpwire media"
+  description: "Configure settings for Warpwire media"
+  parent: system.admin_config
+  route_name: warpwire.settings
+  weight: 100
+warpwire.settings.lti:
+  title: "LTI launch settings"
+  description: "Configuration for launching Warpwire media via Learning Tools Interoperability (LTI)."
+  parent: warpwire.settings
+  route_name: warpwire.settings.lti
+  weight: 1
+warpwire.settings.defaults:
+  title: "Default display settings"
+  description: "Default settings for display of Warpwire media in Drupal."
+  parent: warpwire.settings
+  route_name: warpwire.settings.defaults
+  weight: 2

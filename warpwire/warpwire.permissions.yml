@@ -1,0 +1,15 @@
+warpwire_configure_lti:
+  title: "Configure Warpwire LTI launch"
+  description: "Allows a user to view and configure Warpwire account settings, including LTI key and secret."
+warpwire_configure_defaults:
+  title: "Configure Warpwire default display settings"
+  description: "Allows a user to view and configure default display settings for all Warpwire media."
+warpwire_thumbnails_regenerate_one:
+  title: "Regenerate Warpwire thumbnail"
+  description: "Allows a user to regenerate a single Warpwire thumbnail."
+warpwire_thumbnails_regenerate_all:
+  title: "Regenerate all Warpwire thumbnails"
+  description: "Allows a user to regenerate all Warpwire thumbnails."
+warpwire_lti_launch:
+  title: "LTI Launch Warpwire content"
+  description: "Allows a user to launch a Warpwire video via LTI, which will grant the user access to view the video in Warpwire."
