@@ -1,0 +1,4 @@
+services:
+  warpwire.warpwire_client:
+    class: Drupal\warpwire\WarpwireClient
+    arguments: ["@config.factory", "@http_client", "@logger.factory"]

@@ -1,0 +1,27 @@
+warpwire.settings:
+  path: "/admin/config/warpwire"
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: "Warpwire"
+  requirements:
+    _permission: "access administration pages"
+warpwire.settings.lti:
+  path: "/admin/config/warpwire/lti"
+  defaults:
+    _form: '\Drupal\warpwire\Form\WarpwireLtiSettingsForm'
+    _title: "LTI settings"
+  requirements:
+    _permission: "warpwire_configure_lti"
+warpwire.settings.defaults:
+  path: "/admin/config/warpwire/defaults"
+  defaults:
+    _form: '\Drupal\warpwire\Form\WarpwireDefaultSettingsForm'
+    _title: "Default display settings"
+  requirements:
+    _permission: "warpwire_configure_defaults"
+warpwire.launch:
+  path: "/warpwire/launch"
+  defaults:
+    _controller: '\Drupal\warpwire\Controller\WarpwireLaunchController::launch'
+  requirements:
+    _permission: "warpwire_lti_launch"

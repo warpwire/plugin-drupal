@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.warpwire_media.field_media_warpwire_source
+    - media.type.warpwire_media
+  module:
+    - warpwire
+    - text
+id: media.warpwire_media.default
+targetEntityType: media
+bundle: warpwire_media
+mode: default
+content:
+  field_media_warpwire_source:
+    type: warpwire_warpwire_embed_formatter
+    label: visually_hidden
+    settings: {}
+    third_party_settings: {}
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

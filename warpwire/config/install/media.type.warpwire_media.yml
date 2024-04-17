@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - warpwire
+id: warpwire_media
+label: "Warpwire Media"
+description: "A remotely hosted media asset from Warpwire."
+source: warpwire_source
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_warpwire_source
+field_map: {}

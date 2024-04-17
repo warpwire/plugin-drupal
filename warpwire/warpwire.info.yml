@@ -1,0 +1,9 @@
+name: Warpwire
+type: module
+description: "Embed Warpwire media into your Drupal site."
+package: custom
+version: "1.0"
+core: 10.x
+core_version_requirement: ^10
+dependencies:
+  - drupal:filter

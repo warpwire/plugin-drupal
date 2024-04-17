@@ -1,0 +1,40 @@
+warpwire.settings:
+  type: config_object
+  label: "Warpwire settings"
+  mapping:
+    warpwire:
+      type: mapping
+      mapping:
+        lti_key:
+          type: text
+          label: "LTI Key"
+        lti_secret:
+          type: text
+          label: "LTI Secret"
+        lti_url:
+          type: text
+          label: "LTI URL"
+        group_name:
+          type: text
+          label: "Group Name"
+        lti_institution_name:
+          type: text
+          label: "LTI Institution Name"
+        default_video_display_share:
+          type: boolean
+          label: "By default, Warpwire videos should be displayed with sharing options."
+        default_video_display_title:
+          type: boolean
+          label: "By default, Warpwire videos should be displayed with a title."
+        default_video_display_autoplay:
+          type: boolean
+          label: "By default, Warpwire videos should autoplay."
+        default_video_display_cc:
+          type: boolean
+          label: "By default, Warpwire videos should display closed captions."
+        default_video_width:
+          type: integer
+          label: "By default, Warpwire videos should be displayed with this width."
+        default_video_height:
+          type: integer
+          label: "By default, Warpwire videos should be displayed with this height."

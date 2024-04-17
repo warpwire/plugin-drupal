@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_warpwire_source
+    - media.type.warpwire_media
+  module:
+    - warpwire
+    - text
+id: media.warpwire_media.field_media_warpwire_source
+field_name: field_media_warpwire_source
+entity_type: media
+bundle: warpwire_media
+label: "Warpwire Asset Share Link"
+description: "The Share Link for the Warpwire asset, available under the Share dialog in Warpwire. Check the 'Link Grants Access via LTI' option when sharing."
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ""
+settings:
+  allowed_formats: {}
+field_type: string

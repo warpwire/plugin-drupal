@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function warpwire_entity_bundle_field_info_alter(&$fields, \Drupal\Core\Entity\EntityTypeInterface $entity_type, $bundle)
+{
+    if ($entity_type->id() === 'media' && $bundle === 'warpwire_media') {
+        if (isset($fields['field_media_warpwire_source'])) {
+            // Use the ID as defined in the annotation of the constraint definition
+            $fields['field_media_warpwire_source']->addConstraint('warpwire_valid_source_constraint', []);
+        }
+    }
+}
