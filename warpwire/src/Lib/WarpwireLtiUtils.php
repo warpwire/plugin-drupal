@@ -157,7 +157,7 @@ class WarpwireLtiUtils
     static function urlencodeRfc3986(mixed $input)
     {
         if (is_array($input)) {
-            return array_map('static::urlencodeRfc3986', $input);
+            return array_map([WarpwireLtiUtils::class, 'urlencodeRfc3986'], $input);
         } elseif (is_scalar($input)) {
             return str_replace(
                 '+',
