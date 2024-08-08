@@ -9,7 +9,7 @@ class WarpwireAssetUrl
 {
     // Constants=
     public static $ALLOWED_QUERY_PARAMS = ['audio_only', 'autoplay', 'cc_load_policy', 'controls', 'embed_nonce', 'embed_signature', 'end', 'seek_mode', 'share', 'start', 'title'];
-    public static $SHORTCODE_REGEX = '/^\/w\/([\w\-]+)\/$/';
+    public static $SHORTCODE_REGEX = '/^\/w\/([\w\-]+)\/?$/';
 
     // URL
     public string $url;

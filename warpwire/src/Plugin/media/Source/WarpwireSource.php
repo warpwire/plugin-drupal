@@ -146,7 +146,7 @@ class WarpwireSource extends MediaSourceBase
 
         // Parse and validate the share link (using the configured host for validation)
         $sourceMetadata = new WarpwireAssetUrl($sourceValue);
-        if (!$sourceMetadata) {
+        if (!$sourceMetadata->isValidSiteUrl() || !$sourceMetadata->isValidAssetUrl()) {
             return NULL;
         }
 
