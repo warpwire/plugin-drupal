@@ -86,7 +86,7 @@ class WarpwireEmbedUtils
             $url = '/warpwire/launch?' . http_build_query($launchInput);
         } else {
             // If we're not using LTI launch, simply set the iframe to use the media source URL
-            $url = $targetUrl;
+            $url = $targetUrl . '?' . http_build_query($parameters);
         }
 
         // Default width and height values for iframe
